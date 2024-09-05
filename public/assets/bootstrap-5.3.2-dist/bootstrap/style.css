@@ -1,0 +1,14 @@
+.hero-section {
+    background: url('Black Cream Elegant Monogram Initial Name I C Logo  (1).png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.feature-icon {
+    font-size: 3rem;
+    color: #6c757d;
+}
