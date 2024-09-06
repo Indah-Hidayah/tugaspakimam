@@ -31,6 +31,8 @@ Route::get('/', function () {
 
 Route::get('/user', [UserController::class, 'user']);
 Route::post('/auth', [UserController::class, 'auth']);
+Route::get('/logut',[UserController::class,'welcome']);
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 Route::get('/user/shop/{id}',[UserController::class, 'show']);
 Route::post('/user/create',[UserController::class, 'create']);
 // Route::get('/user/co/{id}', [UserController::class,'show']);

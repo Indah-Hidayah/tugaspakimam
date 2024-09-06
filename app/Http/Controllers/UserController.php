@@ -21,6 +21,11 @@ class UserController extends Controller
         return view('/checkout',);
 
     }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect('/'); 
+    }
     public function show($id)
     {
         $user = auth()->user();
@@ -55,7 +60,7 @@ class UserController extends Controller
     //     return view('user-co');
     // }
 
-    public function user()
+    public function user(  )
     {
         $data['user'] = User::all();
         $data['produk'] = produk::all();

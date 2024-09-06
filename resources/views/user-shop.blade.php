@@ -91,7 +91,6 @@
             </div>
               <ul class="pager">
                 <li><a href="/cekout" style="background-color: #7a447ed1; color:white;">&nbsp;Beli Sekarang</a></li>
-                {{-- <li><a href="#">Keranjang</a></li> --}}
               </ul>
 
           </div>

@@ -15,7 +15,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: palevioletred;
+    background-color: rgb(127, 66, 133)  ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ h2 {
 .login-btn {
     width: 100%;
     padding: 10px;
-    background-color: palevioletred;
+    background-color: rgb(127, 66, 133);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -70,7 +70,7 @@ h2 {
 }
 
 .login-btn:hover {
-    background-color: palevioletred;
+    background-color: rgb(127, 66, 133);
 
 }
 

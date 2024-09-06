@@ -35,7 +35,7 @@
             <ul class="list-group">
                 <li class="list-group-item">Nama <span class="float-right">Indah Hidayah</span></li>
                 <li class="list-group-item">Kode Pos <span class="float-right">46456</span></li>
-                <li class="list-group-item">Alamat <span class="float-right">Taraju</span></li>
+                <li class="list-group-item">Alamat <span class="float-right">Singaparna</span></li>
                 <li class="list-group-item">Harga <span class="float-right">Rp 120.000</span></li>
                 <li class="list-group-item">Pengiriman <span class="float-right">3.000</span></li>
                 <li class="list-group-item list-group-item-secondary">Total <span class="float-right">Rp.123.000</span></li>

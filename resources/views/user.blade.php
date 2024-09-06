@@ -208,48 +208,13 @@
 </head>
 <body>
     <section class="hero" id="home">
-        {{-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/foto/skintific glowing set.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Selamat Datang Di Rabbani Official</h5>
-                        <p>Ayo Di Pilih Dan Jangan Lupa Beli Yahhhh</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets /foto/skintific glowing set.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Selamat Datang Di Rabbani Official</h5>
-                        <p>Ayo Di Pilih Dan Jangan Lupa Beli Yahhhh</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/foto/skintific glowing set.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Selamat Datang Di Rabbani Official</h5>
-                        <p>Ayo Di Pilih Dan Jangan Lupa Beli Yahhhh</p>
-                    </div>
-                </div>
-            </div> --}}
-        <img src="{{asset('assets/foto/logo2.png')}}" alt="">
-        {{-- <h2>Kulit Cantik Berseri</h2>
-        <p>Temukan produk perawatan kulit terbaik untuk Anda.</p>
-        <a href="/user/shop">Belanja Sekarang</a> --}}
+        <img style="margin-left: 40%;" src="{{asset('assets/foto/logo2.png')}}" alt="">
     </section>
     <header>
-        {{-- <h1>Skintific Id</h1> --}}
         <nav>
             <ul>
-                {{-- <li><a href="#">Beranda</a></li> --}}
                 <li><a href="#">Produk</a></li>
                 <li><a href="#">Tentang Kami</a></li>
-                {{-- <li><a href="#">Kontak</a></li> --}}
             </ul>
         </nav>
     </header>
@@ -258,16 +223,16 @@
     <section class="products" id="">
         <h2>Shop Our Products</h2>
         <div class="product-list">
-        @foreach ($produk as $item)
+            @foreach ($produk as $item)
 
             <div class="product">
                 <img src="{{asset('assets/foto/'.$item->foto)}}" alt="">
                 <h3>{{ $item->name}}</h3>
                 <h3>{{ $item->deskripsi}}</h3>
-                 <p>Rp. {{ $item->harga }}</p>
-                 <a href="/user/shop/{{$item->id}}">Shop Now</a>
+                <p>Rp. {{ $item->harga }}</p>
+                <a href="/user/shop/{{$item->id}}">Shop Now</a>
             </div>
-        @endforeach
+            @endforeach
         </div>
     </section>
 
@@ -277,6 +242,10 @@
         <p>𝗘𝘃𝗲𝗿𝘆𝗼𝗻𝗲 𝗱𝗲𝘀𝗲𝗿𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗶𝗲𝗿 𝘀𝗸𝗶𝗻, 𝗶𝗻𝘀𝗶𝗱𝗲 𝗮𝗻𝗱 𝗼𝘂𝘁𝘀𝗶𝗱𝗲. 𝖭𝗈𝗍 𝗈𝗇𝗅𝗒 𝖺𝖻𝗈𝗎𝗍 𝖿𝖺𝗌𝗍 𝖾𝖿𝖿𝖾𝖼𝗍𝗂𝗏𝖾 𝗋𝖾𝗌𝗎𝗅𝗍𝗌, 𝗐𝖾 𝖺𝗅𝗌𝗈 𝗉𝗋𝗂𝗈𝗋𝗂𝗍𝗂𝗓𝖾 𝗍𝗁𝖾 𝗌𝖺𝖿𝖾𝗍𝗒 𝗈𝖿 𝗒𝗈𝗎𝗋 𝗌𝗄𝗂𝗇 𝗂𝗇 𝗍𝗁𝖾 𝗅𝗈𝗇𝗀 𝗋𝗎𝗇, 𝗇𝗈 𝗆𝗈𝗋𝖾 𝖼𝗈𝗆𝗉𝗋𝗈𝗆𝗂𝗌𝗂𝗇𝗀 𝗍𝗁𝖾 𝗁𝖾𝖺𝗅𝗍𝗁 𝗈𝖿 𝗒𝗈𝗎𝗋 𝗌𝗄𝗂𝗇 𝖻𝖺𝗋𝗋𝗂𝖾𝗋, 𝖲𝗄𝗂𝗇𝗍𝗂𝖿𝗂𝖿𝗂𝖼 𝗐𝗂𝗅𝗅 𝗀𝗂𝗏𝖾𝗌 𝗒𝗈𝗎 𝗍𝗁𝖾 𝖻𝖾𝗌𝗍 𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇 𝗈𝖿 𝖺𝗅𝗅. 𝖮𝗎𝗋 𝗋𝖾𝗌𝖾𝖺𝗋𝖼𝗁 𝗍𝖾𝖺𝗆 𝗌𝗉𝖾𝗇𝖽 𝗒𝖾𝖺𝗋𝗌 𝗌𝗍𝗎𝖽𝗒𝗂𝗇𝗀 𝖺𝗇𝖽 𝖽𝖾𝗏𝖾𝗅𝗈𝗉𝗂𝗇𝗀 𝖺 𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇 𝗂𝗇 𝖺 𝖻𝗈𝗍𝗍𝗅𝖾. 𝖶𝖾 𝖻𝖺𝗌𝖾𝖽 𝖺𝗅𝗅 𝗈𝗎𝗋 𝖿𝗈𝗋𝗆𝗎𝗅𝖺𝗍𝗂𝗈𝗇 𝗈𝗇 𝖳𝖳𝖤 𝗍𝖾𝖼𝗁𝗇𝗈𝗅𝗈𝗀𝗒 (𝖳𝗋𝗂𝗅𝗈𝗀𝗒 𝖳𝗋𝗂𝖺𝗇𝗀𝗅𝖾 𝖤𝖿𝖿𝖾𝖼𝗍) 𝗍𝗁𝖺𝗍 𝗇𝗈𝗍 𝗈𝗇𝗅𝗒 𝗀𝗂𝗏𝖾 𝗒𝗈𝗎 𝖾𝖿𝖿𝖾𝖼𝗍𝗂𝗏𝖾 𝗉𝗋𝖾𝖼𝗂𝗌𝖾 𝗋𝖾𝗌𝗎𝗅𝗍𝗌, 𝖻𝗎𝗍 𝖺𝗅𝗌𝗈 𝗌𝖺𝖿𝖾 𝖺𝗇𝖽 𝗀𝖾𝗇𝗍𝗅𝖾 𝖾𝗏𝖾𝗇 𝖿𝗈𝗋 𝗉𝖾𝗈𝗉𝗅𝖾 𝗐𝗂𝗍𝗁 𝗌𝖾𝗇𝗌𝗂𝗍𝗂𝗏𝖾 𝗌𝗄𝗂𝗇.</p>
     </section>
 
+    <form action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button type="submit" class="btn btn-primary" style="margin-left:50%;background-color: #ffffffd1; color:rgb(0, 0, 0); height:30px;">Logout</button>
+    </form>
     <footer>
         <p>&copy; 2024 Skincare . </p>
     </footer>
